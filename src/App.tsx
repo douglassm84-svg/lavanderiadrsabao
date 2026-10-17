@@ -14,15 +14,13 @@ import { ServicesPage } from './pages/ServicesPage';
 import { AboutPage } from './pages/AboutPage';
 import { BlogPage } from './pages/BlogPage';
 import { ContactPage } from './pages/ContactPage';
-import { FileText, Sparkles, ShieldCheck, Image as ImageIcon, Github } from 'lucide-react';
-import { GitHubDeployModal } from './components/GitHubDeployModal';
+import { FileText, Sparkles, ShieldCheck, Image as ImageIcon } from 'lucide-react';
 
 export default function App() {
   const [currentTab, setCurrentTab] = useState<string>('home');
   const [selectedServiceId, setSelectedServiceId] = useState<string | null>(null);
   const [isStrategyHubOpen, setIsStrategyHubOpen] = useState<boolean>(false);
   const [isLogoModalOpen, setIsLogoModalOpen] = useState<boolean>(false);
-  const [isGitHubModalOpen, setIsGitHubModalOpen] = useState<boolean>(true);
 
   // Scroll to top on tab change
   useEffect(() => {
@@ -44,15 +42,6 @@ export default function App() {
           </div>
 
           <div className="flex items-center gap-2 shrink-0">
-            <button
-              onClick={() => setIsGitHubModalOpen(true)}
-              className="flex items-center gap-1.5 bg-emerald-600 hover:bg-emerald-500 text-white px-3 py-0.5 rounded-full font-bold text-[11px] transition-all hover:scale-105 cursor-pointer shadow-xs animate-pulse"
-              title="Abrir campo para inserir token e fazer push"
-            >
-              <Github className="w-3 h-3" />
-              <span>Inserir Token GitHub</span>
-            </button>
-
             <button
               onClick={() => setIsLogoModalOpen(true)}
               className="flex items-center gap-1.5 bg-cyan-700 hover:bg-cyan-600 text-white px-3 py-0.5 rounded-full font-bold text-[11px] transition-all hover:scale-105 cursor-pointer shadow-xs"
@@ -136,12 +125,6 @@ export default function App() {
       <LogoCustomizerModal
         isOpen={isLogoModalOpen}
         onClose={() => setIsLogoModalOpen(false)}
-      />
-
-      {/* GitHub Deploy & Token Modal */}
-      <GitHubDeployModal
-        isOpen={isGitHubModalOpen}
-        onClose={() => setIsGitHubModalOpen(false)}
       />
 
     </div>
