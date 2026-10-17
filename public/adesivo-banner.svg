@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" width="1000" height="500">
+  <defs>
+    <!-- Background Gradient (Official Adesivo 100x50) -->
+    <linearGradient id="adBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a698b" />
+      <stop offset="45%" stop-color="#085d7b" />
+      <stop offset="100%" stop-color="#04394e" />
+    </linearGradient>
+
+    <!-- Soap Mascot Body Gradients -->
+    <linearGradient id="adSoapGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="30%" stop-color="#f0fdfa" />
+      <stop offset="70%" stop-color="#ccfbf1" />
+      <stop offset="100%" stop-color="#a7f3d0" />
+    </linearGradient>
+
+    <radialGradient id="adBadgeBg" cx="45%" cy="38%" r="62%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="40%" stop-color="#085d7b" />
+      <stop offset="100%" stop-color="#033244" />
+    </radialGradient>
+
+    <radialGradient id="adBubble" cx="35%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95" />
+      <stop offset="40%" stop-color="#bae6fd" stop-opacity="0.7" />
+      <stop offset="80%" stop-color="#38bdf8" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.8" />
+    </radialGradient>
+
+    <filter id="adShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#011b24" flood-opacity="0.55" />
+    </filter>
+  </defs>
+
+  <!-- Background Base (Adesivo 100x50 cm Vinyl) -->
+  <rect width="1000" height="500" rx="20" fill="url(#adBg)" />
+
+  <!-- Subtle Ambient Glow -->
+  <g opacity="0.25">
+    <circle cx="220" cy="140" r="160" fill="#38bdf8" />
+    <circle cx="850" cy="380" r="180" fill="#38bdf8" />
+  </g>
+
+  <!-- Vinyl Outer Border Accent -->
+  <rect x="14" y="14" width="972" height="472" rx="14" fill="none" stroke="#38bdf8" stroke-width="3" opacity="0.4" />
+  <rect x="22" y="22" width="956" height="456" rx="10" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.2" />
+
+  <!-- LEFT: Circular Mascot Badge (Center: 240, 250) -->
+  <g transform="translate(240, 250)" filter="url(#adShadow)">
+    <!-- Base Rings -->
+    <circle cx="0" cy="0" r="190" fill="url(#adBadgeBg)" stroke="#ffffff" stroke-width="7" />
+    <circle cx="0" cy="0" r="176" fill="none" stroke="#7dd3fc" stroke-width="2.5" stroke-dasharray="6 4" opacity="0.7" />
+
+    <!-- Bubbles -->
+    <circle cx="-100" cy="-75" r="22" fill="url(#adBubble)" stroke="#ffffff" stroke-width="1.5" />
+    <circle cx="105" cy="-65" r="19" fill="url(#adBubble)" stroke="#ffffff" stroke-width="1.5" />
+    <circle cx="-95" cy="85" r="15" fill="url(#adBubble)" stroke="#ffffff" stroke-width="1.2" />
+    <circle cx="100" cy="75" r="17" fill="url(#adBubble)" stroke="#ffffff" stroke-width="1.2" />
+    <circle cx="0" cy="-145" r="14" fill="url(#adBubble)" stroke="#ffffff" stroke-width="1.2" />
+
+    <!-- Sparkles -->
+    <g fill="#ffffff" opacity="0.9">
+      <path d="M -115 -115 Q -112 -115 -112 -121 Q -112 -115 -109 -115 Q -112 -115 -112 -109 Q -112 -115 -115 -115 Z" />
+      <path d="M 120 -110 Q 123 -110 123 -116 Q 123 -110 126 -110 Q 123 -110 123 -104 Q 123 -110 120 -110 Z" />
+    </g>
+
+    <!-- Soap Mascot Character -->
+    <!-- Arms & Gloves -->
+    <path d="M -60 -25 C -90 -35 -115 -55 -125 -75" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round" />
+    <path d="M -130 -78 C -140 -78 -148 -86 -148 -96 C -148 -104 -142 -110 -134 -110 C -132 -110 -130 -109 -128 -108 C -126 -116 -118 -122 -110 -120 C -102 -119 -97 -112 -97 -105 C -91 -105 -87 -100 -87 -93 C -87 -83 -97 -75 -109 -75 Z" fill="#ffffff" stroke="#085d7b" stroke-width="3.5" />
+
+    <path d="M 60 -25 C 90 -35 115 -55 125 -75" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round" />
+    <path d="M 130 -78 C 140 -78 148 -86 148 -96 C 148 -104 142 -110 134 -110 C 132 -110 130 -109 128 -108 C 126 -116 118 -122 110 -120 C 102 -119 97 -112 97 -105 C 91 -105 87 -100 87 -93 C 87 -83 97 -75 109 -75 Z" fill="#ffffff" stroke="#085d7b" stroke-width="3.5" />
+
+    <!-- Soap Body -->
+    <rect x="-72" y="-120" width="144" height="156" rx="36" ry="36" fill="url(#adSoapGrad)" stroke="#085d7b" stroke-width="4.5" />
+    <path d="M -48 -114 C -15 -110 15 -110 48 -114 C 56 -114 60 -108 60 -102 C 25 -96 -25 -96 -60 -102 C -60 -108 -56 -114 -48 -114 Z" fill="#ffffff" opacity="0.9" />
+
+    <!-- Eyes -->
+    <g>
+      <ellipse cx="-30" cy="-62" rx="12" ry="17" fill="#ffffff" stroke="#085d7b" stroke-width="2.5" />
+      <ellipse cx="-27" cy="-61" rx="8" ry="12" fill="#085d7b" />
+      <circle cx="-29" cy="-67" r="4" fill="#ffffff" />
+      <circle cx="-23" cy="-57" r="1.8" fill="#ffffff" />
+      <path d="M -42 -84 C -32 -90 -20 -88 -16 -84" fill="none" stroke="#085d7b" stroke-width="3.2" stroke-linecap="round" />
+
+      <ellipse cx="30" cy="-62" rx="12" ry="17" fill="#ffffff" stroke="#085d7b" stroke-width="2.5" />
+      <ellipse cx="27" cy="-61" rx="8" ry="12" fill="#085d7b" />
+      <circle cx="25" cy="-67" r="4" fill="#ffffff" />
+      <circle cx="31" cy="-57" r="1.8" fill="#ffffff" />
+      <path d="M 42 -84 C 32 -90 20 -88 16 -84" fill="none" stroke="#085d7b" stroke-width="3.2" stroke-linecap="round" />
+    </g>
+
+    <!-- Cheeks -->
+    <ellipse cx="-48" cy="-38" rx="9" ry="5.5" fill="#fb7185" opacity="0.45" />
+    <ellipse cx="48" cy="-38" rx="9" ry="5.5" fill="#fb7185" opacity="0.45" />
+
+    <!-- Cheerful Smile -->
+    <g>
+      <path d="M -32 -42 C -10 -35 10 -35 32 -42 C 34 -15 -34 -15 -32 -42 Z" fill="#881337" stroke="#085d7b" stroke-width="3.2" stroke-linejoin="round" />
+      <path d="M -28 -40 C -8 -36 8 -36 28 -40 C 26 -30 -26 -30 -28 -40 Z" fill="#ffffff" />
+      <path d="M -14 -24 C 0 -30 14 -24 10 -16 C 0 -14 -10 -14 -14 -24 Z" fill="#f43f5e" />
+    </g>
+
+    <!-- Plaque on Badge Bottom: "Dr. Sabão" -->
+    <rect x="-110" y="42" width="220" height="58" rx="29" ry="29" fill="#ffffff" stroke="#085d7b" stroke-width="4" />
+    <text x="0" y="82" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="900" font-size="28" fill="#085d7b">
+      Dr. Sabão
+    </text>
+  </g>
+
+  <!-- RIGHT: Typography & Official Branding -->
+  <g transform="translate(490, 140)" filter="url(#adShadow)">
+    <!-- "Dr. Sabão" Super Title -->
+    <text x="0" y="85" font-family="'Plus Jakarta Sans', 'Outfit', system-ui, -apple-system, sans-serif" font-weight="900" font-size="104" fill="#ffffff" letter-spacing="-2">
+      Dr. Sabão
+    </text>
+    <text x="475" y="24" font-family="system-ui, sans-serif" font-weight="800" font-size="20" fill="#ffffff" opacity="0.9">
+      TM
+    </text>
+
+    <!-- Orange Pill: "L A V A N D E R I A" -->
+    <g transform="translate(0, 130)">
+      <rect x="0" y="0" width="460" height="74" rx="20" fill="#f97d38" stroke="#ffffff" stroke-width="2.5" />
+      <text x="230" y="48" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="900" font-size="28" fill="#ffffff" letter-spacing="14">
+        LAVANDERIA
+      </text>
+    </g>
+
+    <!-- Quality Badges & Traditional Heritage -->
+    <g transform="translate(4, 250)">
+      <text x="0" y="0" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="800" font-size="17" fill="#7dd3fc" letter-spacing="3.5">
+        ALTO DA XV • CURITIBA • DESDE 2011
+      </text>
+      <text x="0" y="28" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="600" font-size="14.5" fill="#ffffff" opacity="0.95" letter-spacing="1">
+        LAVAGEM A SECO • NOIVAS • TAPETES • COUROS • ECONÔMICA
+      </text>
+    </g>
+  </g>
+</svg>

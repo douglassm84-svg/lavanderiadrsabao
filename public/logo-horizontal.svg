@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 160" width="640" height="160">
+  <defs>
+    <radialGradient id="hBadgeBg" cx="45%" cy="38%" r="62%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="40%" stop-color="#085d7b" />
+      <stop offset="100%" stop-color="#033244" />
+    </radialGradient>
+    <linearGradient id="hSoapGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="40%" stop-color="#f0fdfa" />
+      <stop offset="100%" stop-color="#a7f3d0" />
+    </linearGradient>
+    <filter id="hShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#021c26" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <!-- Left: Mascot Emblem Circle -->
+  <g transform="translate(80, 80)" filter="url(#hShadow)">
+    <!-- Base Outer Circle -->
+    <circle cx="0" cy="0" r="70" fill="url(#hBadgeBg)" stroke="#ffffff" stroke-width="4.5" />
+    <circle cx="0" cy="0" r="63" fill="none" stroke="#7dd3fc" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.7" />
+
+    <!-- Bubbles -->
+    <circle cx="-42" cy="-28" r="9" fill="#bae6fd" opacity="0.8" stroke="#ffffff" stroke-width="1" />
+    <circle cx="44" cy="-25" r="8" fill="#bae6fd" opacity="0.8" stroke="#ffffff" stroke-width="1" />
+    <circle cx="-38" cy="35" r="6" fill="#bae6fd" opacity="0.7" stroke="#ffffff" stroke-width="0.8" />
+    <circle cx="42" cy="32" r="7" fill="#bae6fd" opacity="0.7" stroke="#ffffff" stroke-width="0.8" />
+
+    <!-- Cute Soap Bar Character -->
+    <rect x="-26" y="-38" width="52" height="58" rx="14" ry="14" fill="url(#hSoapGrad)" stroke="#085d7b" stroke-width="2.5" />
+    <path d="M -18 -36 C -5 -33 5 -33 18 -36 C 22 -36 24 -32 24 -28 C 10 -25 -10 -25 -24 -28 C -24 -32 -22 -36 -18 -36 Z" fill="#ffffff" opacity="0.9" />
+
+    <!-- Eyes -->
+    <ellipse cx="-10" cy="-16" rx="4" ry="6.5" fill="#085d7b" />
+    <circle cx="-11" cy="-18" r="1.8" fill="#ffffff" />
+    <ellipse cx="10" cy="-16" rx="4" ry="6.5" fill="#085d7b" />
+    <circle cx="9" cy="-18" r="1.8" fill="#ffffff" />
+
+    <!-- Rosy Cheeks -->
+    <ellipse cx="-18" cy="-6" rx="3.5" ry="2" fill="#fb7185" opacity="0.5" />
+    <ellipse cx="18" cy="-6" rx="3.5" ry="2" fill="#fb7185" opacity="0.5" />
+
+    <!-- Smile -->
+    <path d="M -10 -9 C -2 -4 2 -4 10 -9 C 9 0 -9 0 -10 -9 Z" fill="#881337" stroke="#085d7b" stroke-width="1.2" />
+
+    <!-- Waving Glove -->
+    <path d="M -26 -10 C -34 -15 -38 -20 -40 -26" fill="none" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round" />
+    <ellipse cx="-42" cy="-28" rx="6" ry="5" fill="#ffffff" stroke="#085d7b" stroke-width="1.5" />
+
+    <!-- Welcoming Glove -->
+    <path d="M 26 -10 C 34 -15 38 -20 40 -26" fill="none" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round" />
+    <ellipse cx="42" cy="-28" rx="6" ry="5" fill="#ffffff" stroke="#085d7b" stroke-width="1.5" />
+
+    <!-- Tiny Emblem Tag at bottom -->
+    <rect x="-38" y="24" width="76" height="22" rx="11" ry="11" fill="#ffffff" stroke="#085d7b" stroke-width="2" />
+    <text x="0" y="38" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="900" font-size="11" fill="#085d7b">
+      Dr. Sabão
+    </text>
+  </g>
+
+  <!-- Right: Official Typography and Branding -->
+  <g transform="translate(175, 40)">
+    <!-- "Dr. Sabão" Main Title -->
+    <text x="0" y="52" font-family="'Plus Jakarta Sans', 'Outfit', system-ui, -apple-system, sans-serif" font-weight="900" font-size="58" fill="#085d7b" letter-spacing="-1">
+      Dr. Sabão
+    </text>
+    <!-- TM -->
+    <text x="288" y="22" font-family="system-ui, sans-serif" font-weight="800" font-size="14" fill="#94a3b8">
+      TM
+    </text>
+
+    <!-- Orange Lavanderia Pill -->
+    <g transform="translate(0, 64)">
+      <rect x="0" y="0" width="220" height="34" rx="10" fill="#f97d38" />
+      <text x="110" y="22" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="900" font-size="14" fill="#ffffff" letter-spacing="5">
+        LAVANDERIA
+      </text>
+    </g>
+
+    <!-- Subtitle / Location -->
+    <text x="236" y="86" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="700" font-size="12" fill="#085d7b" letter-spacing="1.5" opacity="0.85">
+      ALTO DA XV • CURITIBA
+    </text>
+  </g>
+</svg>

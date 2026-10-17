@@ -1,0 +1,190 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    <!-- Background Circle Gradients -->
+    <radialGradient id="badgeBg" cx="45%" cy="38%" r="62%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="35%" stop-color="#085d7b" />
+      <stop offset="75%" stop-color="#044359" />
+      <stop offset="100%" stop-color="#022d3d" />
+    </radialGradient>
+
+    <!-- Soap Bar Body Gradients -->
+    <linearGradient id="soapBodyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="25%" stop-color="#f0fdfa" />
+      <stop offset="65%" stop-color="#ccfbf1" />
+      <stop offset="100%" stop-color="#a7f3d0" />
+    </linearGradient>
+
+    <linearGradient id="soapSideGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#99f6e4" />
+      <stop offset="100%" stop-color="#5eead4" />
+    </linearGradient>
+
+    <!-- Soap Gloss Highlight -->
+    <linearGradient id="soapGloss" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.05" />
+    </linearGradient>
+
+    <!-- Translucent Bubbles -->
+    <radialGradient id="bubbleGrad" cx="35%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95" />
+      <stop offset="30%" stop-color="#bae6fd" stop-opacity="0.75" />
+      <stop offset="70%" stop-color="#38bdf8" stop-opacity="0.45" />
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.85" />
+    </radialGradient>
+
+    <!-- Clean Shadows -->
+    <filter id="badgeShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#021c26" flood-opacity="0.4" />
+    </filter>
+
+    <filter id="charShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#032533" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Circular Outer Badge -->
+  <g filter="url(#badgeShadow)">
+    <!-- Outer Rim -->
+    <circle cx="250" cy="250" r="236" fill="url(#badgeBg)" stroke="#ffffff" stroke-width="8" />
+    <!-- Inner Accent Ring -->
+    <circle cx="250" cy="250" r="222" fill="none" stroke="#7dd3fc" stroke-width="2.5" stroke-dasharray="6 4" opacity="0.6" />
+  </g>
+
+  <!-- Floating Soap Bubbles in Background -->
+  <g opacity="0.9">
+    <!-- Bubble Top Left -->
+    <circle cx="105" cy="155" r="28" fill="url(#bubbleGrad)" stroke="#ffffff" stroke-width="1.8" />
+    <path d="M 94 140 A 18 18 0 0 1 118 140" stroke="#ffffff" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.9" />
+    <circle cx="120" cy="144" r="2.5" fill="#ffffff" />
+
+    <!-- Small Bubble -->
+    <circle cx="70" cy="210" r="14" fill="url(#bubbleGrad)" stroke="#ffffff" stroke-width="1.2" />
+    <ellipse cx="66" cy="206" rx="4" ry="2" fill="#ffffff" opacity="0.8" transform="rotate(-30 66 206)" />
+
+    <!-- Bubble Top Right -->
+    <circle cx="395" cy="165" r="26" fill="url(#bubbleGrad)" stroke="#ffffff" stroke-width="1.8" />
+    <path d="M 384 152 A 16 16 0 0 1 408 152" stroke="#ffffff" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.9" />
+
+    <!-- Small Bubble Right -->
+    <circle cx="430" cy="225" r="16" fill="url(#bubbleGrad)" stroke="#ffffff" stroke-width="1.2" />
+    
+    <!-- Bubble Top Center -->
+    <circle cx="250" cy="72" r="18" fill="url(#bubbleGrad)" stroke="#ffffff" stroke-width="1.5" />
+    <path d="M 243 64 A 10 10 0 0 1 257 64" stroke="#ffffff" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.8" />
+
+    <!-- Star Sparkles -->
+    <g fill="#ffffff" opacity="0.9">
+      <path d="M 85 105 Q 88 105 88 98 Q 88 105 91 105 Q 88 105 88 112 Q 88 105 85 105 Z" />
+      <path d="M 405 110 Q 408 110 408 103 Q 408 110 411 110 Q 408 110 408 117 Q 408 110 405 110 Z" />
+      <path d="M 335 60 Q 337 60 337 55 Q 337 60 339 60 Q 337 60 337 65 Q 337 60 335 60 Z" />
+    </g>
+  </g>
+
+  <!-- DR. SABÃO MASCOT (Harmonious, Symmetrical, Professional Vector Character) -->
+  <g filter="url(#charShadow)">
+    
+    <!-- Left Arm & White Glove (Waving Friendly) -->
+    <g>
+      <!-- Arm -->
+      <path d="M 160 215 C 130 205 105 185 92 165" fill="none" stroke="#085d7b" stroke-width="14" stroke-linecap="round" />
+      <path d="M 160 215 C 130 205 105 185 92 165" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round" />
+      <!-- Left Glove (Clean 4-finger cartoon glove) -->
+      <path d="M 85 168 C 75 168 66 160 66 150 C 66 142 72 135 80 135 C 82 135 84 136 86 137 C 88 128 96 122 105 124 C 113 125 118 132 118 140 C 124 140 128 145 128 152 C 128 162 118 170 106 170 Z" fill="#ffffff" stroke="#085d7b" stroke-width="4.5" stroke-linejoin="round" />
+      <!-- Glove cuff -->
+      <ellipse cx="94" cy="172" rx="14" ry="6" fill="#e0f2fe" stroke="#085d7b" stroke-width="3.5" transform="rotate(-15 94 172)" />
+    </g>
+
+    <!-- Right Arm & White Glove (Thumbs Up / Welcoming) -->
+    <g>
+      <!-- Arm -->
+      <path d="M 340 215 C 370 205 395 185 408 165" fill="none" stroke="#085d7b" stroke-width="14" stroke-linecap="round" />
+      <path d="M 340 215 C 370 205 395 185 408 165" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round" />
+      <!-- Right Glove -->
+      <path d="M 415 168 C 425 168 434 160 434 150 C 434 142 428 135 420 135 C 418 135 416 136 414 137 C 412 128 404 122 395 124 C 387 125 382 132 382 140 C 376 140 372 145 372 152 C 372 162 382 170 394 170 Z" fill="#ffffff" stroke="#085d7b" stroke-width="4.5" stroke-linejoin="round" />
+      <!-- Glove cuff -->
+      <ellipse cx="406" cy="172" rx="14" ry="6" fill="#e0f2fe" stroke="#085d7b" stroke-width="3.5" transform="rotate(15 406 172)" />
+    </g>
+
+    <!-- Soap Bar Main Body -->
+    <g>
+      <!-- Shadow edge -->
+      <rect x="150" y="105" width="200" height="215" rx="46" ry="46" fill="#5eead4" stroke="#085d7b" stroke-width="6" />
+      <!-- Main front surface -->
+      <rect x="150" y="100" width="200" height="210" rx="46" ry="46" fill="url(#soapBodyGrad)" stroke="#085d7b" stroke-width="5" />
+      <!-- Top curved bevel highlight -->
+      <path d="M 185 108 C 225 114 275 114 315 108 C 335 108 342 118 342 128 C 300 138 200 138 158 128 C 158 118 165 108 185 108 Z" fill="url(#soapGloss)" />
+      <!-- Side reflection streak -->
+      <path d="M 162 145 C 162 130 168 120 178 116 C 174 128 174 240 178 260 C 168 255 162 245 162 230 Z" fill="#ffffff" opacity="0.6" />
+    </g>
+
+    <!-- Eyes (Expressive, Bright & Lively) -->
+    <g>
+      <!-- Left Eye -->
+      <g>
+        <!-- White sclera -->
+        <ellipse cx="206" cy="176" rx="17" ry="24" fill="#ffffff" stroke="#085d7b" stroke-width="3.5" />
+        <!-- Iris deep teal -->
+        <ellipse cx="210" cy="177" rx="11" ry="16" fill="#085d7b" />
+        <!-- Pupils / Specular Highlights -->
+        <circle cx="207" cy="169" r="5.5" fill="#ffffff" />
+        <circle cx="215" cy="183" r="2.5" fill="#ffffff" />
+        <!-- Friendly Eyebrow -->
+        <path d="M 188 145 C 202 136 218 140 224 146" fill="none" stroke="#085d7b" stroke-width="4.5" stroke-linecap="round" />
+      </g>
+
+      <!-- Right Eye -->
+      <g>
+        <!-- White sclera -->
+        <ellipse cx="294" cy="176" rx="17" ry="24" fill="#ffffff" stroke="#085d7b" stroke-width="3.5" />
+        <!-- Iris deep teal -->
+        <ellipse cx="290" cy="177" rx="11" ry="16" fill="#085d7b" />
+        <!-- Pupils / Specular Highlights -->
+        <circle cx="287" cy="169" r="5.5" fill="#ffffff" />
+        <circle cx="295" cy="183" r="2.5" fill="#ffffff" />
+        <!-- Friendly Eyebrow -->
+        <path d="M 312 145 C 298 136 282 140 276 146" fill="none" stroke="#085d7b" stroke-width="4.5" stroke-linecap="round" />
+      </g>
+    </g>
+
+    <!-- Rosy Cheeks -->
+    <ellipse cx="180" cy="208" rx="13" ry="8" fill="#fb7185" opacity="0.4" />
+    <ellipse cx="320" cy="208" rx="13" ry="8" fill="#fb7185" opacity="0.4" />
+
+    <!-- Cute Open Smile with Teeth and Tongue -->
+    <g>
+      <!-- Smile outline -->
+      <path d="M 202 202 C 230 210 270 210 298 202 C 300 236 250 252 200 236 C 200 220 201 208 202 202 Z" fill="#881337" stroke="#085d7b" stroke-width="4.5" stroke-linejoin="round" />
+      <!-- Teeth -->
+      <path d="M 205 204 C 235 210 265 210 295 204 C 293 216 207 216 205 204 Z" fill="#ffffff" />
+      <!-- Cheerful Pink Tongue -->
+      <path d="M 226 230 C 250 218 274 230 268 248 C 250 250 240 250 232 248 Z" fill="#f43f5e" />
+    </g>
+  </g>
+
+  <!-- LOWER BRAND BADGE: "Dr. Sabão" & "LAVANDERIA" -->
+  <g filter="url(#charShadow)">
+    <!-- White Plaque Base -->
+    <rect x="75" y="320" width="350" height="88" rx="44" ry="44" fill="#ffffff" stroke="#085d7b" stroke-width="5" />
+    
+    <!-- DR. SABÃO Text (Bold, High Contrast, Perfectly Centered) -->
+    <text x="250" y="372" text-anchor="middle" font-family="'Plus Jakarta Sans', 'Outfit', system-ui, -apple-system, sans-serif" font-weight="900" font-size="44" fill="#085d7b" letter-spacing="-0.5">
+      Dr. Sabão
+    </text>
+
+    <!-- TM SuperScript -->
+    <text x="376" y="348" font-family="system-ui, sans-serif" font-weight="800" font-size="12" fill="#94a3b8">
+      TM
+    </text>
+
+    <!-- Orange Lavanderia Pill Overlay at Bottom -->
+    <g>
+      <rect x="135" y="404" width="230" height="42" rx="21" ry="21" fill="#f97d38" stroke="#ffffff" stroke-width="3.5" />
+      <text x="250" y="431" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-weight="900" font-size="16" fill="#ffffff" letter-spacing="5">
+        LAVANDERIA
+      </text>
+    </g>
+  </g>
+</svg>
