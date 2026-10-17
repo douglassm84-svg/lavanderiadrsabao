@@ -27,9 +27,9 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
     }
   }, []);
 
-  // 1. Official Adhesive Banner (Adesivo 100x50 cm - Proporção Exata 2:1 Sem Deformação)
+  // 1. Official Adhesive Banner (Adesivo Oficial 2:1 - Exato da Marca)
   if (variant === 'sticker') {
-    const bannerSrc = customSticker || `${import.meta.env.BASE_URL}adesivo-banner.svg`;
+    const bannerSrc = customSticker || `${import.meta.env.BASE_URL}logo-oficial.svg`;
 
     return (
       <div 
